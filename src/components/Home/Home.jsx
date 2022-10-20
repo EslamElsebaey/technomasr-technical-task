@@ -24,25 +24,23 @@ export default function Home({checkLogin}) {
    setProducts(productCategory);
    checkLogin();
   }
-  
+
+
   // this when we click any category from the menu
   let dropdown_item = document.querySelectorAll(".dropdown-item") ; 
   for(let i =0 ; i < dropdown_item.length ; i++){
     dropdown_item[i].addEventListener("click" , function(){
-      getParticularProduct(dropdown_item[i].innerHTML);
-      localStorage.setItem("choice" , dropdown_item[i].innerHTML);
+      if(dropdown_item[i].innerHTML.toLowerCase() === ("all products").toLowerCase()){
+        getAllProducts();
+        localStorage.setItem("choice" , dropdown_item[i].innerHTML.toLowerCase());
+      }else{
+        getParticularProduct(dropdown_item[i].innerHTML);
+      localStorage.setItem("choice" , dropdown_item[i].innerHTML.toLowerCase());
+      }
+      
     })
   }
 
-
-// a button to get all products again 
-  $(".allproducts").on("click", function () {
-    getAllProducts();
-    localStorage.removeItem("choice");
-});
-
-
- 
 
 // check if we have products in localstorage or not 
   const [cartNumber, setCartNumber] = useState(0);
@@ -71,7 +69,11 @@ export default function Home({checkLogin}) {
 
   useEffect(() => {
    if(localStorage.getItem("choice") !== null){
-    getParticularProduct(localStorage.getItem("choice"));
+    if(localStorage.getItem("choice").toLowerCase() === ("all products").toLowerCase()){
+      getAllProducts()
+    }else{
+      getParticularProduct(localStorage.getItem("choice").toLowerCase());
+    }
    }else{
     getAllProducts();
    }
@@ -92,12 +94,12 @@ export default function Home({checkLogin}) {
             <div className="col-md-12">
               <div className="detailed-header">
               <div className="products-menus">
-              <button className="allproducts">all products</button>
               <div className="dropdown">
                   <button className="btn text-capitalize dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     select product
                   </button>
                   <ul className="dropdown-menu">
+                  <li><button className="dropdown-item " type="button">all products</button></li>
                     <li><button className="dropdown-item" type="button">smartphones</button></li>
                     <li><button className="dropdown-item" type="button">laptops</button></li>
                     <li><button className="dropdown-item" type="button">fragrances</button></li>
