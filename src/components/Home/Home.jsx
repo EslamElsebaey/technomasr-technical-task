@@ -141,7 +141,7 @@ export default function Home({checkLogin}) {
                       </Link>
                       <div className="product-desc">
                       <h5 className="text-center product-title">{product.title}</h5>
-                      <p className="text-center product-price">Price is : ${product.price}</p>
+                      <p className="text-center product-price">Price : ${product.price}</p>
                       <div className="d-flex justify-content-between align-items-center">
                       <Link to={`/singleitem/${product.id}`}>
                       <button className=" showdetails-btn text-capitalize ">show details</button>
