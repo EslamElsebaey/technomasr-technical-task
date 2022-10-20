@@ -59,7 +59,7 @@ useEffect(  ()=>{
    <div className="toTop"><i className="fa-solid arrowTop fa-angle-up"></i></div>
    <Navbar  isLogin={isLogin} setIsLogin={setIsLogin}  />
    <Routes>
-   <Route path="/"  element={<Home checkLogin={checkLogin}/> } />
+   <Route path="/"  element={<Login checkLogin={checkLogin}/> } />
    <Route path="login"  element={  <Login checkLogin={checkLogin} />  } />
    <Route path="register"  element={   <Register/> } />
     <Route path="home"  element={  <Protectedroute>  <Home   checkLogin={checkLogin} /></Protectedroute> } />
