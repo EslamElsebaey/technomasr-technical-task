@@ -649,9 +649,6 @@ font-weight: bold;
 		.shopping-cart{
 			height: 610px;
 		}
-	}
-
-	@media screen and (max-width : 992px) {
 		.Header{
 			flex-direction: column;
 			margin-bottom: 20px;
@@ -662,6 +659,30 @@ font-weight: bold;
 			padding: 15px 0px 0px 0px ;
 		}
 	}
+
+	@media screen and (max-width : 500px) {
+		.detailed-header-fixed{
+			padding: 10px 20px;
+		}
+		.allproducts{
+			padding: 4px 21px;
+			margin-bottom: 15px;
+			font-size: 15px;
+			border-radius: 5px;
+		}
+		.dropdown-toggle{
+			padding: 5px 6px;
+			font-size: 15px;
+		}
+		.cart-logo{
+			font-size: 32px;
+		}
+		.items-number{
+			width: 24px;
+			height: 24px;
+		}
+	}
+
 
 	@media screen and (max-width : 350px) {
 		.item-img img {
