@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/technomasr-technical-task/static/css/main.aa84fafc.css",
-    "main.js": "/technomasr-technical-task/static/js/main.facb4be0.js",
+    "main.css": "/technomasr-technical-task/static/css/main.34e3c5c2.css",
+    "main.js": "/technomasr-technical-task/static/js/main.52263006.js",
     "static/media/fa-solid-900.ttf": "/technomasr-technical-task/static/media/fa-solid-900.b48ad290d0335879a92b.ttf",
     "static/media/fa-brands-400.ttf": "/technomasr-technical-task/static/media/fa-brands-400.f9ee61fab3c11e2f3ed3.ttf",
     "static/media/fa-solid-900.woff2": "/technomasr-technical-task/static/media/fa-solid-900.66104b766c3d0462b3c5.woff2",
@@ -11,11 +11,11 @@
     "static/media/fa-v4compatibility.ttf": "/technomasr-technical-task/static/media/fa-v4compatibility.f601162ae669f88823a3.ttf",
     "static/media/fa-v4compatibility.woff2": "/technomasr-technical-task/static/media/fa-v4compatibility.745989aab0d69cab7e70.woff2",
     "index.html": "/technomasr-technical-task/index.html",
-    "main.aa84fafc.css.map": "/technomasr-technical-task/static/css/main.aa84fafc.css.map",
-    "main.facb4be0.js.map": "/technomasr-technical-task/static/js/main.facb4be0.js.map"
+    "main.34e3c5c2.css.map": "/technomasr-technical-task/static/css/main.34e3c5c2.css.map",
+    "main.52263006.js.map": "/technomasr-technical-task/static/js/main.52263006.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa84fafc.css",
-    "static/js/main.facb4be0.js"
+    "static/css/main.34e3c5c2.css",
+    "static/js/main.52263006.js"
   ]
 }
