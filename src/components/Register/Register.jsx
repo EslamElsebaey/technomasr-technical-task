@@ -27,7 +27,7 @@ export default function Register() {
  async function sendUser (event){
   event.preventDefault()
   if(validateUserData() === true){
-    let response = await axios.post("https://route-egypt-api.herokuapp.com/signup" , user);
+    let response = await axios.post("https://route-movies-api.vercel.app/signup" , user);
     if(response.data.message.includes("success")){
         setSuccess(response.data.message);
         setErrors([])
